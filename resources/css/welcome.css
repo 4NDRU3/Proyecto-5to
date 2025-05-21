@@ -1,0 +1,121 @@
+/* Reset general para todos los elementos*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales para el HTML y el body */
+  html, body {
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to right, #d7dde5 0%, #d2dbe5 50%, #d7dde5 100%);
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  /* Contenedor principal de la cuerda*/
+  .rope {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 200px;
+  }
+
+  /* Imagen dentro de la cuerda */
+  .rope img {
+    height: 200px;
+  }
+  /* Alineación izquierda para parte de la cuerda */
+  .rope-left {
+    float: left;
+    margin-left: 150px;
+  }
+  /* Alineación derecha para parte de la cuerda */
+  .rope-right {
+    float: right;
+    margin-right: 150px;
+  }
+  
+  /* Contenedor principal */
+  .page1 {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: -10px; /* superposición*/
+  }
+  
+  /* Elemento con el plato */
+  .plate1 {
+    position: absolute;
+    top: 80px;
+    left: -250px;
+
+  }
+  
+  /* Cuerpo del contenido */
+  .body-wrap {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: #2D3A4B; /* fondo oscuro */
+    color: #fff;          /* texto blanco */
+    transition: 3s ease-out all;
+    box-shadow: 0px 50px 100px rgba(0, 0, 0, 1); /* sombra para dar profundidad */
+    padding-top: 80px;
+    text-align: center;
+  }
+  
+  /* Titulo  principal */
+  .page1-title {
+    font-size: 80px;
+    letter-spacing: 10px;
+    font-weight: 500;
+  }
+  
+
+
+/* Estilo para el botón de Iniciar Sesión */
+.btn.btn-primary {
+  border-radius: 100px;
+  background-color: #fff;
+  outline: none;
+  font-size: 1em;
+
+  /* Tipografía */
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: #2D3A4B;
+  
+  /* Forma y espaciado */
+  padding: 10px 60px;
+  min-width: 150px;
+  text-align: center;
+  
+  /* Transición para efectos hover */
+  transition: all 0.3s ease;
+  box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Efecto hover */
+.btn.btn-primary:hover {
+  background-color: #54ff93;
+  transform: translateY(-2px);
+}
+
+/* Versión responsive para pantallas pequeñas */
+@media (max-width: 576px) {
+  .btn.btn-primary {
+      width: 100%;
+      padding: 0.65rem 1rem;
+  }
+  
+  .d-grid.gap-2.d-sm-flex.justify-content-sm-center {
+      flex-direction: column;
+      gap: 0.75rem !important;
+  }
+}
